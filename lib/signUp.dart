@@ -16,7 +16,7 @@ class _SignUpState extends State<SignUp> {
   TextEditingController numController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   RegExp emailValidate = RegExp(r'^[a-zA-Z0-9]+@(gmail)+[/.](com)$');
-  RegExp numValidate = RegExp(r'^[03][0-9]{9}');
+  RegExp numValidate = RegExp(r'^(03)[0-9]{9}$');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
